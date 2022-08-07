@@ -1,28 +1,31 @@
 #include <iostream>
 #include <string>
-#include <sstream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+
 int main()
 {
-    int num_1 , num_2 ;
-    char c ;
-    cin >> num_1 >> c >> num_2 ;
-    if (c == '/')
+    string text;
+    char ch ;
+    getline(cin, text);
+    for (int i = 0; i < text.length(); i++)
     {
-        cout << num_1 / num_2 << endl ;
+        if (isupper(text[i]) )
+        {
+            ch = tolower(text[i]) ;
+            cout << ch ;
+        }
     }
-    if (c == '*')
-    {
-        cout << num_1 * num_2 << endl ;
-    }
-    if (c == '+')
-    {
-        cout << num_1 + num_2 << endl ;
-    }
-    if (c == '-')
-    {
-        cout << num_1 - num_2 << endl ;
-    }
-    return 0 ;
+
+    // Write an answer using cout. DON'T FORGET THE "<< endl"
+    // To debug: cerr << "Debug messages..." << endl;
+
+    cout << "result" << endl;
 }
