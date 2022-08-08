@@ -32,12 +32,11 @@ int main()
     }
 }
 
-
-cinnamon apple
-
-cinnamon
-    p
-    p
-    l
-    e
-    
+// input 
+// cinnamon apple
+// output 
+// cinnamon
+//     p
+//     p
+//     l
+//     e
