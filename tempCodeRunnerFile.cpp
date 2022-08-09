@@ -1,31 +1,26 @@
 #include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-
 using namespace std;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
-
-int main()
-{
-    string text;
-    char ch ;
-    getline(cin, text);
-    for (int i = 0; i < text.length(); i++)
-    {
-        if (isupper(text[i]) )
-        {
-            ch = tolower(text[i]) ;
-            cout << ch ;
-        }
-    }
-
-    // Write an answer using cout. DON'T FORGET THE "<< endl"
-    // To debug: cerr << "Debug messages..." << endl;
-
-    cout << "result" << endl;
+int main() {
+	int t ;
+	cin >> t ;
+	
+	for (int i = 0 ; i < t ; i ++ )
+	{
+	    int move , state ;
+	    cin >> move >> state ;
+	    if (move == 3 || move == 2 )
+	    {
+	    	cout << "Ambiguous" ;
+	    }
+	    else if (move == 0 || move == 4 && state == 0 )
+	    {
+	        cout << "On" ;
+	    }
+	    else if (move == 0 || move == 4 || move == 1&& state == 4 )
+	    {
+	        cout << "Off" ;
+	    }
+	}
+	return 0;
 }

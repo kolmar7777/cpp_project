@@ -20,15 +20,16 @@ int main()
     }
     for (int j = 1 ; j < f_2.length() ; j ++ )
     {
+        char ch = f_2[j] ;
+        ch = toupper(ch) ;
         int temp = f_1.find(f_2[0]) ;
+        cout << endl ;
         while (temp != 0 )
         {
             temp -- ;
-            cout << "5" ;
+            cout << " " ;
         }
-        char ch = f_2[j] ;
-        ch = toupper(ch) ;
-        cout << endl << ch ;
+        cout << ch ;        
     }
 }
 
