@@ -1,35 +1,51 @@
-#include <iostream>
+##include <iostream>
 #include <string>
-#include<algorithm>
+void add(int x, int y);
+void multypy(int x, int y);
+void mines(int x, int y);
+void divide(int x, int y);
 using namespace std;
 int main()
 {
-    string dna;
-    getline(cin, dna);
-    for (int i = 0; i < dna.size(); i++)
+    char ch;
+    cout << "inter the oper";
+    cin >> ch;
+    cout << "inter two num in a row sep by entar";
+    int a, b;
+    cin >> a >> b;
+    switch (ch)
     {
-        if (dna[i] == 'A')
-        {
-            for (int j = 0; j < 2 ; j++)
-            {
-                cout << dna[i] ;
-            }
-        }
-        if (dna[i] == 'T')
-        {
-            for (int j = 0; j < 3 ; j++)
-            {
-                cout << dna[i] ;
-            }
-        }
-        if (dna[i] == 'G')
-        {
-            dna.erase(remove(dna.begin(), dna.end(), 'G'), dna.end());
-        }
-        if (dna[i] == 'C')
-        {
-            cout << dna[i] ;
-        }
+    case '+':
+        add(a, b);
+    case '-':
+        mines(a, b);
+    case '*':
+        multypy(a, b);
+    case '/':
+        divide(a, b);
     }
     return 0;
+}
+
+void add(int x, int y)
+{
+    cout << x + y;
+}
+
+void multypy(int x, int y)
+{
+    x = x * y;
+    cout << x;
+}
+
+void divide(int x, int y)
+{
+    if (y > 0)
+        cout << x / y;
+    else
+        cout << "invalid";
+}
+void mines(int x, int y)
+{
+    cout << x - y;
 }

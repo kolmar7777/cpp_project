@@ -1,56 +1,20 @@
 #include <iostream>
-#include <string>
-#include <cstring>
-#include <stdio.h>
-#include <ctype.h>
 using namespace std;
-int main()
+int main(int argc, char *argv[])
 {
-    int num ;
-    string input ;
-    getline(cin, input) ;
-    cin >> num ;
-    if ( num == 1 )
-    {
-        for ( int i = 0; i < input.length() ; i++ )
-        {
-            if ( input[i] != ' ' ) 
-            {
-                cout << input[i] << " " ;
-            }
-        }
-    }
-    if ( num == 2 )
-    {
-        for ( int i = 0; i < input.length() ; i++)
-        {
-            input[i] = toupper( input[i] ) ;
-            if ( input[i] != ' ' ) 
-            {
-                cout << input[i] << " " ;
-            }
-        }
-    }
-    if ( num == 3 )
-    {
-        for ( int i = 0; i < input.length() ; i++ )
-        {
-            if ( i % 2 == 0 )
-            {
-                if ( input[i] != ' ' ) 
-                {
-                    cout << input[i] ;
-                }
-            }
-            else if ( i % 2 != 0 )
-            {
-                input[i] = toupper( input[i] ) ;
-                if ( input[i] != ' ' ) 
-                {
-                    cout << input[i] ;
-                }
-            }
-        }
-    }
-    return 0 ;
+	int x[3][3][3];
+	for (int i = 0; i < 3; i++)
+	{
+        cout << "*";
+		for (int j = 0; j < 3; j++)
+		{
+            cout<< "*";
+			for (int z = 0; z < 3; z++)
+			{
+				cout<<"*";
+			}
+            cout<< endl;
+		}
+        cout<< endl;
+	}
 }

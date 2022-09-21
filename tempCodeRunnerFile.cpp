@@ -4,23 +4,15 @@ using namespace std;
 int main() {
 	int t ;
 	cin >> t ;
-	
-	for (int i = 0 ; i < t ; i ++ )
+	switch (t) 
 	{
-	    int move , state ;
-	    cin >> move >> state ;
-	    if (move == 3 || move == 2 )
-	    {
-	    	cout << "Ambiguous" ;
-	    }
-	    else if (move == 0 || move == 4 && state == 0 )
-	    {
-	        cout << "On" ;
-	    }
-	    else if (move == 0 || move == 4 || move == 1&& state == 4 )
-	    {
-	        cout << "Off" ;
-	    }
+		case 1 :
+		cout << "1";
+		case 2 : 
+		cout << "2";
+		case 3 :
+		cout << "3";
 	}
+
 	return 0;
 }
