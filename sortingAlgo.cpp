@@ -15,7 +15,7 @@ int main()
         cin >> array[i] ;
     }
     string method ;
-    cout << "Decreamenting or Increamenting ?";
+    cout << "Decreamenting or Increamenting ? ";
     cin >> method ;
     if (method == "Decreamenting")
     {
