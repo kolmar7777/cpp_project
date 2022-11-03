@@ -35,9 +35,9 @@ int main()
 
 void Increamenting(int array[],int arraySize)
 {
-    for (int i = 0; i < arraySize; i++)
+    for (int i = 0; i < arraySize - 1 ; i++)
     {
-        for (int j = i ; j < arraySize; j++)
+        for (int j = i + 1 ; j <= arraySize - 1 ; j++)
         {
            if (array[i] > array[j])
            {
@@ -52,9 +52,9 @@ void Increamenting(int array[],int arraySize)
 }
 void Decreamenting(int array[],int arraySize)
 {
-    for (int i = 0; i < arraySize; i++)
+    for (int i = 0; i < arraySize - 1; i++)
     {
-        for (int j = i ; j < arraySize; j++)
+        for (int j = i + 1 ; j <= arraySize - 1; j++)
         {
            if (array[i] < array[j])
            {
