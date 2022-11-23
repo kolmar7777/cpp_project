@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-main()
+int main()
 {
     string sudent[5] = { "ali","amin","saleh" ,"sahar" ,"reza" };
     string Admin = "nima";
