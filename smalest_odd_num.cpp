@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int list_of_numbers[5] , counter , temp , odd[5];
+    int list_of_numbers[5] , counter = 0 , temp , odd[5];
     for (int i = 0; i < 5 ; i++)
     {
         cin >> list_of_numbers[i] ;
